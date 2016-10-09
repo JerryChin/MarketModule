@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_btn_canary_yellow"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/ll_network_state"
+    android:visibility="gone"
+    android:clickable="true">
+    <ImageView android:src="@mipmap/network_warn"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+    <TextView android:text="@string/netwrok_not_connection"
+        android:textSize="13sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"/>
+    <View android:id="@+id/view_right_arrow"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMain">#51a6ff</color>
+    <color name="colorMainDark">#007afa</color>
+    <color name="colorMainLight">#9CCDFC</color>
+    <color name="colorMainBg">#F0F5F6</color>
+    <color name="colorGray">#888888</color>
+    <color name="gray_dark">#AAAAAA</color>
+    <color name="grayish">#08000000</color>
+    <color name="colorWhite">@android:color/white</color>
+
+    <color name="translucent">#40000000</color>
+
+    <color name="bg_tab_pressed">#6633B5E5</color>
+
+
+    <color name="colorWeatherLocation">#575958</color>
+    <color name="colorWeatherDate">#A2A2A2</color>
+    <color name="colorWeatherSplit">#565A5D</color>
+    <color name="colorWeatherGrey">#A3A6A4</color>
+    <color name="colorLiteBlack">#666666</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorIOSBlue">#22BBEE</color>
+    <color name="colorIOSRed">#BC494C</color>
+
+    <color name="red">#FF0000</color>
+    <color name="red_1">#F23140</color>
+
+    <color name="canary_yellow">#FDF9E1</color>
+    <color name="canary_yellow_pressed">#fcf5cd</color>
+    <color name="canary_yellow_ripper">#ffffc1</color>
+</resources>

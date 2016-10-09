@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorMainDark">
+    <item android:drawable="@drawable/shape_90arc_blue" />
+    <item android:drawable="@drawable/shape_90arc_blue"
+        android:id="@android:id/mask"/>
+</ripple>

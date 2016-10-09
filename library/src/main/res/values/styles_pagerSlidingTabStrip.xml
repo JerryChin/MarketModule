@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PagerSlidingTabStrip">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="pstsSelectedColor">?attr/colorAccent</item>
+        <item name="pstsIndicatorHeight">3dp</item>
+        <item name="pstsIndicatorColor">?attr/colorAccent</item>
+        <item name="pstsUnderlineHeight">1dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MarketModule</string>
+    <string name="tab1">首页</string>
+    <string name="tab2">分类</string>
+    <string name="tab3">购物车</string>
+    <string name="tab4">更多</string>
+
+</resources>

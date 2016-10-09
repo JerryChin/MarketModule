@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="TabIndicatorStyle" format="reference"/>
+
+    <declare-styleable name="TabIndicator">
+        <attr name="itemLayout" format="reference"/>
+        <attr name="imageId" format="reference"/>
+        <attr name="textId" format="reference"/>
+        <attr name="textArray" format="reference"/>
+        <attr name="drawableArray" format="reference"/>
+        <attr name="selectedDrawableArray" format="reference"/>
+        <attr name="android:textColor"/>
+        <attr name="selectedTextColor" format="color"/>
+    </declare-styleable>
+</resources>

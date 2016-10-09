@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_action"
+    android:layout_width="@dimen/tabs_size"
+    android:layout_height="@dimen/tabs_size"
+    android:minWidth="@dimen/tabs_size"
+    android:background="@drawable/bg_btn_title"
+    android:clickable="true">
+
+    <Button android:id="@+id/btn_action"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="false"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:textColor="?attr/colorAccent"/>
+
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextView" parent="@android:style/Widget.TextView"/>
+
+    <style name="TextView.Toast">
+        <item name="android:textSize">@dimen/font_m_size</item>
+        <item name="android:paddingLeft">@dimen/ten</item>
+        <item name="android:paddingRight">@dimen/ten</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">#EEFFFFFF</item>
+        <item name="android:background">@drawable/bg_toast</item>
+    </style>
+</resources>

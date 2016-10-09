@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netwrok_not_connection">网络连接不可用,请检查!</string>
+    <string name="double_click_close">再次点击返回桌面</string>
+    <string name="send">发送</string>
+    <string name="distinguishing">识别中…</string>
+
+    <string name="popup_exit_topic">确定要退出登录吗？</string>
+    <string name="popup_exit_sure">退出</string>
+    <string name="popup_exit_cancel">取消</string>
+</resources>

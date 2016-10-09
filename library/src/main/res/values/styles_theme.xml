@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textSize">@dimen/font_m_size</item>
+        <item name="colorTitleActionPressed">@android:color/darker_gray</item>
+    </style>
+</resources>

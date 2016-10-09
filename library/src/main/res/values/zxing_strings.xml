@@ -1,0 +1,7 @@
+<resources>
+    <string name="scan_title">扫一扫</string>
+    <string name="sd_pic">相册</string>
+    <string name="light">灯光</string>
+    <string name="my_qr_code">我的二维码</string>
+    <string name="scan_text">请将二维码置于取景框内扫描</string>
+</resources>

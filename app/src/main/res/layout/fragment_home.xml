@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hc.library.widget.SlidingSwitcherView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:imageArray="@array/images"
+        app:scaleType="fitXY"
+        android:id="@+id/sliding_switcher_view">
+    </com.hc.library.widget.SlidingSwitcherView>
+</LinearLayout>

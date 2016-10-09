@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SlidingSwitcherViewStyle" format="reference"/>
+
+    <declare-styleable name="SlidingSwitcherView">
+        <attr name="imageArray" format="reference"/>
+        <attr name="scaleType" format="enum">
+            <enum name="centerCrop" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="centerInside" value="3"/>
+            <enum name="fitStart" value="4"/>
+            <enum name="fitCenter" value="5"/>
+            <enum name="fitEnd" value="6"/>
+            <enum name="fitXY" value="7"/>
+            <enum name="matrix" value="8"/>
+        </attr>
+        <attr name="dotHeight" format="dimension"/>
+        <attr name="dotWidth" format="dimension"/>
+        <attr name="dotLeftMargin" format="dimension"/>
+        <attr name="dotRightMargin" format="dimension"/>
+        <attr name="dotBackground" format="reference"/>
+
+        <attr name="dotListBottomMargin" format="dimension"/>
+    </declare-styleable>
+</resources>

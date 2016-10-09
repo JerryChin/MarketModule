@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <CheckBox
+            android:id="@+id/cb_voice_or_input"
+            android:layout_width="@dimen/edit_menu_button_width"
+            android:layout_height="@dimen/edit_menu_button_height"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/selector_cb_keyboard_voice"
+            android:button="@null" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:hint=""
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_pressed_voice"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/cb_expression"
+            android:layout_width="@dimen/edit_menu_button_width"
+            android:layout_height="@dimen/edit_menu_button_height"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/selector_cb_expression_keyboard"
+            android:button="@null" />
+
+        <FrameLayout
+            android:layout_width="42dp"
+            android:layout_height="@dimen/edit_menu_button_height"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="42dp"
+                android:layout_height="@dimen/edit_menu_button_height"
+                android:layout_gravity="center"
+                android:text="@string/send"
+                android:textSize="13dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_chat_type_select"
+                android:layout_width="@dimen/edit_menu_button_width"
+                android:layout_height="@dimen/edit_menu_button_height"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_btn_chat_type_select" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

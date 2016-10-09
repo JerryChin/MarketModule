@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_texts">
+        <item>@string/tab1</item>
+        <item>@string/tab2</item>
+        <item>@string/tab3</item>
+        <item>@string/tab4</item>
+    </string-array>
+
+    <array name="tab_draws">
+        <item>@mipmap/tab_home</item>
+        <item>@mipmap/tab_zhiquan</item>
+        <item>@mipmap/tab_zhiqu</item>
+        <item>@mipmap/tab_me</item>
+    </array>
+
+    <array name="tab_selected_draws">
+        <item>@mipmap/tab_home_pressed</item>
+        <item>@mipmap/tab_zhiquan_pre</item>
+        <item>@mipmap/tab_zhiqu_pressed</item>
+        <item>@mipmap/tab_me_pressed</item>
+    </array>
+
+    <array name="images">
+        <item>@mipmap/image1</item>
+        <item>@mipmap/image2</item>
+        <item>@mipmap/image3</item>
+        <item>@mipmap/image4</item>
+    </array>
+</resources>

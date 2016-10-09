@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SideFilterBarStyle">
+        <item name="popupBackground">@drawable/shape_popupchar</item>
+        <item name="pressedBackground">@color/translucent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:scrollbars">vertical</item>
+    </style>
+</resources>

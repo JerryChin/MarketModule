@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="SideFilterBarStyle" format="reference"/>
+
+    <declare-styleable name="SideFilterBar">
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="pressedBackground" format="reference"/>
+        <attr name="popupBackground" format="reference"/>
+        <attr name="popupTextColor" format="color|reference"/>
+        <attr name="popupTextSize" format="dimension|reference"/>
+        <attr name="popupSize" format="dimension|reference"/>
+    </declare-styleable>
+
+</resources>
