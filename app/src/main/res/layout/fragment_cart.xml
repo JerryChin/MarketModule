@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLiteDark">
+
+    <RelativeLayout
+        android:id="@+id/rl_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量统计："/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="55"
+            android:textColor="@color/colorIOSRed"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_score"
+        android:layout_below="@+id/rl_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赠送积分统计："/>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="5500"
+            android:textColor="@color/colorIOSRed"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_prize"
+        android:layout_below="@+id/rl_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额统计(不含运费)："/>
+
+        <TextView
+            android:id="@+id/tv_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥：6500"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorIOSRed"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_business_list"
+        android:layout_below="@+id/rl_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="商品明细"/>
+
+    <ScrollView
+        android:id="@+id/sv_list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/round_corner"
+        android:layout_below="@+id/tv_business_list"
+        android:layout_above="@+id/btn_pay"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_business_list_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="去结算"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        android:background="@drawable/round_corner_solid"/>
+
+</RelativeLayout>

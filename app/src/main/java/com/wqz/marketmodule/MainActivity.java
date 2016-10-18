@@ -10,8 +10,8 @@ import com.hc.library.base.BaseFragmentActivity;
 import com.hc.library.widget.ScrollViewPager;
 import com.hc.library.widget.TabIndicator;
 import com.wqz.fragment.HomeFragment;
-import com.wqz.fragment.KnowQuFragment;
-import com.wqz.fragment.KnowQuanFragment;
+import com.wqz.fragment.CartFragment;
+import com.wqz.fragment.ClassifyFragment;
 import com.wqz.fragment.MeFragment;
 
 import java.util.ArrayList;
@@ -35,8 +35,8 @@ public class MainActivity extends BaseFragmentActivity
     void initUI()
     {
         fragmentList.add(new HomeFragment());
-        fragmentList.add(new KnowQuanFragment());
-        fragmentList.add(new KnowQuFragment());
+        fragmentList.add(new ClassifyFragment());
+        fragmentList.add(new CartFragment());
         fragmentList.add(new MeFragment());
 
         viewPager = (ScrollViewPager)findViewById(R.id.viewPager);

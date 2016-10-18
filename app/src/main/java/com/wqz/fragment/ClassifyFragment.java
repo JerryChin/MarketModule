@@ -7,10 +7,8 @@ import android.view.ViewGroup;
 
 import com.wqz.marketmodule.R;
 
-/**
- * Created by Administrator on 2016/8/4.
- */
-public class KnowQuFragment extends BaseFragment {
+
+public class ClassifyFragment extends BaseFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,6 +18,6 @@ public class KnowQuFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState,int flag) {
-        return inflater.inflate(R.layout.fragment_know_qu, container, false);
+        return inflater.inflate(R.layout.fragment_classify, container, false);
     }
 }
