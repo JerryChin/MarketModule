@@ -10,5 +10,7 @@ public class AboutActivity extends TitleBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
+        setTitle("关于我");
     }
 }

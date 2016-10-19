@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorGray">
+    android:background="@color/colorLiteDark">
     <com.hc.library.widget.SlidingSwitcherView
         android:layout_width="match_parent"
         android:layout_height="120dp"
