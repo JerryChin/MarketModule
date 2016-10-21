@@ -5,6 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorLiteDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <EditText
+            android:id="@+id/et_serach"
+            android:layout_toLeftOf="@+id/btn_serach"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_corner"/>
+
+        <Button
+            android:id="@+id/btn_serach"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_corner_solid"/>
+
+    </RelativeLayout>
+
     <com.hc.library.widget.SlidingSwitcherView
         android:layout_width="match_parent"
         android:layout_height="120dp"

@@ -6,9 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 
 import com.wqz.marketmodule.AboutActivity;
 import com.wqz.marketmodule.R;
+import com.wqz.marketmodule.SettingActivity;
 
 
 /**
@@ -16,7 +18,8 @@ import com.wqz.marketmodule.R;
  */
 public class MeFragment extends BaseFragment
 {
-    ImageButton ibSetting;
+    RelativeLayout rlAbout;
+    RelativeLayout rlSetting;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,8 +30,11 @@ public class MeFragment extends BaseFragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState,int flag)
     {
         View view = inflater.inflate(R.layout.fragment_me, container, false);
-        ibSetting = (ImageButton)view.findViewById(R.id.ib_setting_activity);
-        ibSetting.setOnClickListener(l);
+        rlAbout = (RelativeLayout)view.findViewById(R.id.rl_about);
+        rlAbout.setOnClickListener(l);
+
+        rlSetting = (RelativeLayout)view.findViewById(R.id.rl_setting);
+        rlSetting.setOnClickListener(l);
 
         return view;
     }
@@ -40,8 +46,12 @@ public class MeFragment extends BaseFragment
         {
             switch (v.getId())
             {
-                case R.id.ib_setting_activity:
+                case R.id.rl_about:
                     startActivity(new Intent(MeFragment.this.getActivity(), AboutActivity.class));
+                    break;
+
+                case R.id.rl_setting:
+                    startActivity(new Intent(MeFragment.this.getActivity(), SettingActivity.class));
                     break;
             }
         }
