@@ -28,7 +28,7 @@
             android:layout_alignParentRight="true"
             android:text="搜索"
             android:textColor="@color/colorWhite"
-            android:background="@drawable/round_corner_solid"/>
+            android:background="@drawable/ripple_round_solid"/>
 
     </RelativeLayout>
 

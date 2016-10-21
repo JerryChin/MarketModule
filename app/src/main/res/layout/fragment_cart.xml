@@ -107,6 +107,6 @@
         android:textStyle="bold"
         android:textColor="@color/colorWhite"
         android:textSize="18dp"
-        android:background="@drawable/round_corner_solid"/>
+        android:background="@drawable/ripple_round_solid"/>
 
 </RelativeLayout>
