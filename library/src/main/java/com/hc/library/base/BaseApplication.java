@@ -2,51 +2,59 @@ package com.hc.library.base;
 
 import android.app.Activity;
 import android.app.Application;
+import android.graphics.drawable.Drawable;
 
+import com.hc.library.pojo.Carousel;
+import com.hc.library.pojo.User;
 import com.hc.library.util.ActivityList;
 import com.hc.library.util.NetConnectionUtils;
 import com.hc.library.util.OnNetStateChangedListener;
+import com.zhy.http.okhttp.OkHttpUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
 
 
 public class BaseApplication extends Application implements ActivityList, OnNetStateChangedListener {
-    private static BaseApplication mApp;
 
+    private static BaseApplication mApp;
 
     public static BaseApplication getInstance() {
         return mApp;
     }
 
     private ArrayList<Activity> mActivitys;
-    /**
-     * 当前所在位置
-     * */
 
     public List<Activity> getActivitys() {
         return mActivitys;
     }
-//
-//    private int mNetworkState;
-//
-//
-//    public int getNetState(){
-//        return mNetworkState;
-//    }
-//
-//    /**
-//     * 更新网络状态
-//     * */
-//    public int updateNetworkState() {
-//        int networkState = NetConnectionUtils.getNetworkState(getApplicationContext());
-//        if (mNetworkState != networkState) {
-//            mNetworkState = networkState;
-//            onNetStateChanged(networkState);
-//        }
-//
-//        return networkState;
-//    }
+
+    private static User user;
+
+    public void setUser(User user)
+    {
+        this.user = user;
+    }
+
+    public User getUser()
+    {
+        return user;
+    }
+
+    private static List<Carousel> cl;
+
+    public void setCarouselList(List<Carousel> cl)
+    {
+        this.cl = cl;
+    }
+
+    public List<Carousel> getCarouselList()
+    {
+        return cl;
+    }
 
     @Override
     public void onNetStateChanged(int networkState) {
@@ -63,16 +71,16 @@ public class BaseApplication extends Application implements ActivityList, OnNetS
         super.onCreate();
         mActivitys = new ArrayList<>();
 
-//        EMOptions options = new EMOptions();
-//        // 默认添加好友时，是不需要验证的，改成需要验证
-//        options.setAcceptInvitationAlways(false);
-//        //初始化
-//        EMClient.getInstance().init(getApplicationContext(), options);
-//        //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
-//        EMClient.getInstance().setDebugMode(BuildConfig.DEBUG);
-        //获取网络状态
-//        mNetworkState = NetConnectionUtils.getNetworkState(getApplicationContext());
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+//                .addInterceptor(new LoggerInterceptor("TAG"))
+                .connectTimeout(10000L, TimeUnit.MILLISECONDS)
+                .readTimeout(10000L, TimeUnit.MILLISECONDS)
+                //其他配置
+                .build();
+
+        OkHttpUtils.initClient(okHttpClient);
     }
+
 
     @Override
     public void addActivity(Activity activity) {

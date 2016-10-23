@@ -5,4 +5,6 @@
     <string name="tab3">购物车</string>
     <string name="tab4">更多</string>
 
+    <string name="stringRegister"><u>快速注册</u></string>
+    <string name="stringForget"><u>忘记密码</u></string>
 </resources>

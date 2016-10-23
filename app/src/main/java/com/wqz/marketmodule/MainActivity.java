@@ -42,9 +42,10 @@ public class MainActivity extends BaseFragmentActivity
         viewPager = (ScrollViewPager)findViewById(R.id.viewPager);
         viewPager.setAdapter(new FragAdapter(getSupportFragmentManager(),fragmentList));
 
-
         tabDraws = (TabIndicator)findViewById(android.R.id.tabs);
         tabDraws.setViewPager(viewPager);
+
+
     }
 
     public class FragAdapter extends FragmentPagerAdapter {

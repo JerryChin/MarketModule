@@ -6,4 +6,88 @@
     tools:context="com.wqz.marketmodule.LoginActivity"
     android:background="@mipmap/night_sunny">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/iv_login_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"/>
+
+        <EditText
+            android:id="@+id/et_login_account"
+            android:layout_below="@+id/iv_login_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="\t请输入账号"
+            android:textColorHint="@color/colorLiteDark"
+            android:textColor="@color/colorLiteDark"
+            android:drawableLeft="@mipmap/account"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_90arc_blue_pressed"/>
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_below="@+id/et_login_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:hint="\t输入密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorLiteDark"
+            android:textColor="@color/colorLiteDark"
+            android:drawableLeft="@mipmap/password"
+            android:background="@drawable/shape_90arc_blue_pressed"/>
+
+
+        <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_login_password"
+            android:background="@drawable/bg_btn_90arc_blue"
+            android:text="登录"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorLiteDark"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login_login">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有账号？"
+                android:textColor="@color/colorLiteDark"/>
+
+            <TextView
+                android:id="@+id/tv_register_activity"
+                android:layout_toRightOf="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringRegister"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_register_forget"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringForget"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
 </RelativeLayout>

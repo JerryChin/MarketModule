@@ -5,22 +5,43 @@ package com.wqz.marketmodule;
  */
 
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.hc.library.base.BaseActivity;
+import com.hc.library.pojo.Carousel;
 import com.hc.library.util.IViewGroup;
 import com.hc.thirdpartylibrary.NumberProgressBar;
 import com.hc.thirdpartylibrary.OnProgressBarListener;
+import com.squareup.picasso.Picasso;
+import com.wqz.util.Utils;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import okhttp3.Call;
 
 public class SpalshActivity extends BaseActivity
 {
     NumberProgressBar npbSplash;
     ImageView ivLogo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,6 +58,7 @@ public class SpalshActivity extends BaseActivity
 
         ivLogo = (ImageView)findViewById(R.id.iv_splashlogo);
     }
+
 
 
     Handler handler = new Handler()

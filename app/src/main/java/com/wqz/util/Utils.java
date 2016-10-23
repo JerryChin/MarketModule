@@ -6,7 +6,7 @@ package com.wqz.util;
 public class Utils
 {
     //URL后期配置成服务器地址
-    public static String ROOT_URL = "http://localhost:8080/marketbg";
+    public static String ROOT_URL = "http://192.168.191.1:8080/marketbg";
 
     //-----------------------------Product---------------------------------
     public static String PRODUCT_URL = ROOT_URL + "/product";
@@ -15,7 +15,7 @@ public class Utils
 
     public static String PRODUCT_GET_SERACH = PRODUCT_URL + "/productGetSerach";//搜索
 
-    public static String PRODUCT_SERACH = PRODUCT_URL + "/productCreate";//搜索
+    public static String PRODUCT_CREATE = PRODUCT_URL + "/productCreate";//创建
     //======================================================================
 
     //-----------------------------ShoppingCart-----------------------------

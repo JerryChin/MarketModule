@@ -3,10 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.wqz.marketmodule.RegisterActivity">
+    tools:context="com.wqz.marketmodule.RegisterActivity"
+    android:background="@mipmap/night_rain">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/iv_register_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"/>
+
+        <EditText
+            android:id="@+id/et_register_account"
+            android:layout_below="@+id/iv_register_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="\t请输入账号"
+            android:textColorHint="@color/colorLiteDark"
+            android:textColor="@color/colorLiteDark"
+            android:drawableLeft="@mipmap/account"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_90arc_blue_pressed"/>
+
+        <EditText
+            android:id="@+id/et_register_password"
+            android:layout_below="@+id/et_register_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:hint="\t输入密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorLiteDark"
+            android:textColor="@color/colorLiteDark"
+            android:drawableLeft="@mipmap/password"
+            android:background="@drawable/shape_90arc_blue_pressed"/>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_register_password"
+            android:background="@drawable/bg_btn_90arc_blue"
+            android:text="注册"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorLiteDark"
+            android:textSize="20dp"/>
+
+
+    </RelativeLayout>
 
 </RelativeLayout>
