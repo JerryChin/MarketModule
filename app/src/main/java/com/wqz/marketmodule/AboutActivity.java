@@ -12,5 +12,7 @@ public class AboutActivity extends TitleBarActivity {
         setContentView(R.layout.activity_about);
 
         setTitle("关于我");
+        setTitleTextColor(R.color.colorIOSBlue);
+        setTitleBarBackground(R.color.colorWhite);
     }
 }

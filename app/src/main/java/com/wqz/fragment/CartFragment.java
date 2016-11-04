@@ -52,11 +52,16 @@ public class CartFragment extends BaseFragment
 
     void initUI()
     {
-        OkHttpUtils.get().url(Utils.SHOPPING_CART_GET)
-                .addParams("userid", ((MarketAPP)((BaseFragmentActivity)getActivity()).getBaseApp()).getUser().getId().toString())
-                .build().execute(cartCallback);
-
         lCart = (ListView)view.findViewById(R.id.lv_cart_list);
+
+
+        MarketAPP thisApp = (MarketAPP)((BaseFragmentActivity)getActivity()).getBaseApp();
+        if(thisApp != null && thisApp.getUser() != null && thisApp.getUser().getAccount() != null)
+        {
+            OkHttpUtils.get().url(Utils.SHOPPING_CART_GET)
+                    .addParams("userid", ((MarketAPP)((BaseFragmentActivity)getActivity()).getBaseApp()).getUser().getId().toString())
+                    .build().execute(cartCallback);
+        }
 
     }
 
