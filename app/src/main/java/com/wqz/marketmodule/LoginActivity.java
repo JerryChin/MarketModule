@@ -1,19 +1,18 @@
 package com.wqz.marketmodule;
 
-import android.app.Application;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonIOException;
 import com.hc.library.base.TitleBarActivity;
 import com.hc.library.pojo.User;
 import com.wqz.util.Utils;
@@ -86,7 +85,8 @@ public class LoginActivity extends TitleBarActivity
         }
     };
 
-    StringCallback loginCallback = new StringCallback() {
+    StringCallback loginCallback = new StringCallback()
+    {
         @Override
         public void onError(Call call, Exception e, int id) {
             Toast.makeText(LoginActivity.this,"Error Code : " + e.getMessage() ,Toast.LENGTH_LONG).show();
@@ -100,6 +100,15 @@ public class LoginActivity extends TitleBarActivity
             {
                 User user = new Gson().fromJson(response, User.class);
                 getBaseApp().setUser(user);
+
+                SharedPreferences sharedPreferences=getSharedPreferences("MarketModule",
+                        Context.MODE_WORLD_READABLE+Context.MODE_WORLD_WRITEABLE);
+
+                SharedPreferences.Editor editor = sharedPreferences.edit(); //获取编辑器
+                editor.putString("account",etAccount.getText().toString());
+                editor.putString("password",etPassword.getText().toString());
+                editor.apply();//提交修改
+
                 LoginActivity.this.finish();
             }
         }

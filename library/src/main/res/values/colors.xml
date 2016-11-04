@@ -21,6 +21,7 @@
     <color name="colorLiteBlack">#666666</color>
     <color name="colorBlack">#000000</color>
     <color name="colorTransparent">#00000000</color>
+    <color name="colorGrayBlack">#111111</color>
 
     <color name="colorIOSBlue">#22BBEE</color>
     <color name="colorIOSRed">#BC494C</color>

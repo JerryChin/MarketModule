@@ -5,8 +5,7 @@ package com.wqz.util;
  */
 public class Utils
 {
-    //URL后期配置成服务器地址
-    public static String ROOT_URL = "http://192.168.191.1:8080/marketbg";
+    public static String ROOT_URL = "http://120.27.110.76:8090/marketbg";
 
     //-----------------------------Product---------------------------------
     public static String PRODUCT_URL = ROOT_URL + "/product";
@@ -22,11 +21,11 @@ public class Utils
 
     public static String SHOPPING_CART_URL = ROOT_URL + "/shoppingCart";
 
-    public static String PSHOPPING_CART_GET = SHOPPING_CART_URL + "/shoppingCartGet";//得到购物车数据
+    public static String SHOPPING_CART_GET = SHOPPING_CART_URL + "/shoppingCartGet";//得到购物车数据
 
-    public static String PSHOPPING_CART_CREATE = SHOPPING_CART_URL + "/shoppingCartCreate";//创建购物车数据
+    public static String SHOPPING_CART_CREATE = SHOPPING_CART_URL + "/shoppingCartCreate";//创建购物车数据
 
-    public static String PSHOPPING_CART_DELETE = SHOPPING_CART_URL + "/shoppingCartDelete";//删除购物车数据
+    public static String SHOPPING_CART_DELETE = SHOPPING_CART_URL + "/shoppingCartDelete";//删除购物车数据
 
     //======================================================================
 

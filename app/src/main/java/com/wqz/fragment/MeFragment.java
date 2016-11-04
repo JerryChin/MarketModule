@@ -7,8 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
+import com.hc.library.base.BaseActivity;
+import com.hc.library.base.BaseFragmentActivity;
+import com.hc.library.pojo.User;
 import com.hc.library.view.CircleImageView;
+import com.squareup.picasso.Picasso;
+import com.wqz.app.MarketAPP;
 import com.wqz.marketmodule.AboutActivity;
 import com.wqz.marketmodule.LoginActivity;
 import com.wqz.marketmodule.R;
@@ -23,6 +29,8 @@ public class MeFragment extends BaseFragment
     RelativeLayout rlAbout;
     RelativeLayout rlSetting;
     CircleImageView headView;
+    TextView tvNickname;
+    User user;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,8 +47,21 @@ public class MeFragment extends BaseFragment
         return view;
     }
 
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+
+        if(user != null && user.getIcon() != null)
+            Picasso.with(getActivity()).load(user.getIcon()).into(headView);
+
+        if(user != null && user.getNickname() != null)
+            tvNickname.setText(user.getNickname());
+    }
+
     void initUI(View view)
     {
+        user = ((BaseFragmentActivity)getActivity()).getBaseApp().getUser();
         rlAbout = (RelativeLayout)view.findViewById(R.id.rl_about);
         rlAbout.setOnClickListener(l);
 
@@ -49,6 +70,8 @@ public class MeFragment extends BaseFragment
 
         headView = (CircleImageView)view.findViewById(R.id.civ_head);
         headView.setOnClickListener(l);
+
+        tvNickname = (TextView)view.findViewById(R.id.tv_nickname);
     }
 
     View.OnClickListener l = new View.OnClickListener()
@@ -67,7 +90,8 @@ public class MeFragment extends BaseFragment
                     break;
 
                 case R.id.civ_head:
-                    startActivity(new Intent(MeFragment.this.getActivity(), LoginActivity.class));
+                    if(user == null || user.getAccount() == null)
+                        startActivity(new Intent(MeFragment.this.getActivity(), LoginActivity.class));
                     break;
             }
         }

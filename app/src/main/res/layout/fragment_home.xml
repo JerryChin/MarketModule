@@ -33,10 +33,204 @@
     </RelativeLayout>
 
     <com.hc.library.widget.SlidingSwitcherView
+        android:id="@+id/sliding_switcher_view"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        app:imageArray="@array/images"
-        app:scaleType="fitXY"
-        android:id="@+id/sliding_switcher_view">
+        app:scaleType="fitXY">
     </com.hc.library.widget.SlidingSwitcherView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorHomeBlue"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_ripple">
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="限时抢购"
+            android:textColor="@color/colorHomeBlue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_time"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/blue_right"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorHomeBlue"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sale_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_ripple">
+
+        <ImageView
+            android:id="@+id/iv_sale_report"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/sale"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="促销快报"
+            android:textColor="@color/colorHomeBlue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_sale_report"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/blue_right"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorHomeBlue"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_ripple">
+
+        <ImageView
+            android:id="@+id/iv_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/bag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新品上架"
+            android:textColor="@color/colorHomeBlue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_new"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/blue_right"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorHomeBlue"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_ripple">
+
+        <ImageView
+            android:id="@+id/iv_single"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/star"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热卖单品"
+            android:textColor="@color/colorHomeBlue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_single"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/blue_right"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorHomeBlue"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_ripple">
+
+        <ImageView
+            android:id="@+id/iv_recommend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/flag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐品牌"
+            android:textColor="@color/colorHomeBlue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_recommend"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@mipmap/blue_right"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorHomeBlue"/>
 </LinearLayout>

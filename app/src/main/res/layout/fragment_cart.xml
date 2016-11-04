@@ -90,11 +90,12 @@
         android:layout_marginRight="10dp"
         android:padding="10dp">
 
-        <TextView
-            android:id="@+id/tv_business_list_detail"
+        <ListView
+            android:id="@+id/lv_cart_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
+
     </ScrollView>
 
     <Button

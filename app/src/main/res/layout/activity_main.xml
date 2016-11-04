@@ -44,7 +44,7 @@
             android:id="@android:id/tabs"
             android:textColor="@color/colorMainLight"
             app:selectedTextColor="@color/colorMain"
-            android:background="?attr/colorPrimary">
+            android:background="@color/colorWhite">
         </com.hc.library.widget.TabIndicator>
     </LinearLayout>
 </RelativeLayout>
