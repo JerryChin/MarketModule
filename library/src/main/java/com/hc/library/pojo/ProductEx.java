@@ -25,7 +25,7 @@ public class ProductEx
     private int price;
     private int type;
     private String imageaddress;
-    private Object introduce;
+    private String introduce;
 
     public int getNumber() {
         return number;
@@ -83,11 +83,11 @@ public class ProductEx
         this.imageaddress = imageaddress;
     }
 
-    public Object getIntroduce() {
+    public String getIntroduce() {
         return introduce;
     }
 
-    public void setIntroduce(Object introduce) {
+    public void setIntroduce(String introduce) {
         this.introduce = introduce;
     }
 }
