@@ -7,4 +7,5 @@
 
     <string name="stringRegister"><u>快速注册</u></string>
     <string name="stringForget"><u>忘记密码</u></string>
+    <string name="title_activity_product_show">ProductShowActivity</string>
 </resources>

@@ -1,16 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:rowCount="6"
-    android:columnCount="4"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:background="@color/colorLiteDark">
 
-    <View
-        android:background="@color/bg_tab_pressed"
-        android:layout_column="0"
-        android:layout_row="0"
-        android:layout_rowSpan="1"
-        />
-</GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_classify1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类3"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:id="@+id/rl_classify4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类5"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类6"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:id="@+id/rl_classify7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类7"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类8"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类9"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:id="@+id/rl_classify10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类10"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类11"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_classify12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorIOSBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:text="分类12"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
