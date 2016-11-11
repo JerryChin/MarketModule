@@ -19,6 +19,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:layout_marginRight="10dp"
+            android:textColor="@color/colorIOSBlue"
             android:background="@drawable/round_corner"/>
 
         <Button

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.hc.library.base.BaseFragmentActivity;
 import com.hc.library.base.TitleBarActivity;
+import com.hc.library.pojo.User;
 import com.hc.library.widget.warpper.Toast;
 import com.wqz.app.MarketAPP;
 
@@ -48,7 +49,7 @@ public class SettingActivity extends TitleBarActivity
                     editor.putString("account","");
                     editor.putString("password","");
                     editor.apply();//提交修改
-                    (SettingActivity.this.getBaseApp()).setUser(null);
+                    (SettingActivity.this.getBaseApp()).setUser(new User());
 
                     Toast.makeText(SettingActivity.this,"已退出登录",Toast.LENGTH_LONG).show();
                     SettingActivity.this.finish();

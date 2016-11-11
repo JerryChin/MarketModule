@@ -71,7 +71,16 @@ public class ClassifyFragment extends BaseFragment
     View.OnClickListener l = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(ClassifyFragment.this.getActivity(), ProductShowActivity.class));
+
+            Bundle bundle = new Bundle();
+            bundle.putInt("classify",v.getId() - R.id.rl_classify1);
+            bundle.putBoolean("isSerach",false);
+
+            Intent intent = new Intent();
+            intent.putExtras(bundle);
+            intent.setClass(ClassifyFragment.this.getActivity(), ProductShowActivity.class);
+
+            startActivity(intent);
         }
     };
 }
