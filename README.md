@@ -1,4 +1,5 @@
 # MarketModule
+*其它语言参见 in: [English](README.en_us.md)。*
 这是一个商城的完整代码。MarketModuleBG是该项目的后端。旨在为创业公司省时间。=。=
 
 公司的活好他娘的多。一个不知道什么鬼的领导让我写的100多个后端接口废了一大半。。
